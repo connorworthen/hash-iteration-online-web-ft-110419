@@ -21,10 +21,8 @@ birthday_kids = {
   "Amanda" => 27
 }
 
-def age_appropriate_birthday
-  age_appropriate_birthday.select { |name,age| age <= 12 }
+def age_appropriate_birthday(birthday_kids)
+  birthday_kids.select { |name,age| age <= 12 }
     puts "Happy Birthday #{name}! You are now #{age} year old!"
   end
 end
-
-age_appropriate_birthday
