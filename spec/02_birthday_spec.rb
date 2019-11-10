@@ -24,7 +24,7 @@ birthday_kids = {
 def age_appropriate_birthday(birthday_kids)
   birthday_kids.select { |name,age| age <= 12 }
     puts "Happy Birthday #{name}! You are now #{age} year old!"
-  else
+  if age > 12
     puts "Happy Birthday #{name}!"
   end
 end
